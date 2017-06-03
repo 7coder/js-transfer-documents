@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- HEADER -->
+
+  <div class="header row clearfix">
+    <div class="logo col-md-4">
+        <p class="p"><span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>Super Document Transfer System</p>
+    </div>
+    <div class="col-md-3 col-md-offset-5">
+      <div class="user-name">Hello, John Doe</div>
+    </div>
+  </div>
+
+  <!-- /HEADER -->
+
+  <!-- CONTENT -->
+
+  <div class="row clearfix">
+    <div class="col-md-3 list-of-docs-container">
+      <h5>List of Documents</h5>
+      <ul class="list-of-docs list-unstyled">
+        <li class="item">
+          <div class="doc-item">
+            <p class="head">Official document #123</p>
+            <p class="date">Create date: 12/12/2016</p>
+            <p class="author">Author: John Doe</p>
+            <div class="status new">New</div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="doc-item">
+            <p class="head">Resolution #4152</p>
+            <p class="date">Create date 12/12/2016</p>
+            <p class="author">Author: Mike Doe</p>
+            <div class="status none"></div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="doc-item">
+            <p class="head">Order #123</p>
+            <p class="date">Create date 12/12/2016</p>
+            <p class="author">Author: Karl</p>
+            <div class="status archive">Archive</div>
+          </div>
+        </li>
+      </ul>
+
+    </div>
+    <div class="doc-container-wrapper col-md-9">
+
+      <!-- MENU CONTROL -->
+
+      <div class="row clearfix">
+        <div class="col-md-12">
+
+          <ul class="buttons-menu list-unstyled clearfix">
+            <li class="item">
+              <div class="button-menu add">
+                <span class="glyphicon glyphicon-plus-sign" area-hidden="true"></span> New document
+              </div>
+            </li>
+            <li class="item">
+              <div class="button-menu save">
+                <span class="glyphicon glyphicon-floppy-save" area-hidden="true"></span> Save document
+              </div>
+            </li>
+            <li class="item">
+              <div class="button-menu delete">
+                <span class="glyphicon glyphicon-trash" area-hidden="true"></span> Delete document
+              </div>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+
+      <!-- /MENU CONTROL -->
+
+      <!-- TYPE OF DOCUMENT -->
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-inline document-picker">
+            <label for="document_type">Type of Document</label>
+            <select name="document_type" id="document_type" class="form-control">
+              <option value="none">---</option>
+              <option value="official_document">Official Document</option>
+              <option value="resolution">Resolution</option>
+              <option value="order">Order</option>
+            </select>
+          </div>
+        </div class="col-md-12">
+      </div>
+
+      <!-- /TYPE OF DOCUMENT -->
+
+
+      <!-- DOCUMENT CONTAINER -->
+
+      <div class="row clearfix">
+
+
+        <div class="col-md-10 col-md-offset-1 document-container" id="document_container">
+
+          <div class="document-item">
+
+            <div class="logo">
+              <img src="./img/logo.png" class="img"/>
+              Best Company
+            </div>
+
+            <div class="row clearfix address-container">
+              <div class="form-group col-md-5">
+                <input type="text" class="form-control input-sm" id="fullname_send" placeholder="Full Name">
+              </div><i class="clearfix"></i>
+              <div class="form-group col-md-5">
+                <input type="text" class="form-control input-sm" id="position_send" placeholder="Position">
+              </div><i class="clearfix"></i>
+              <div class="form-group col-md-5">
+                <input type="text" class="form-control input-sm" id="place_send" placeholder="Place">
+              </div><i class="clearfix"></i>
+              <div class="form-group col-md-5">
+                <input type="text" class="form-control input-sm" id="address_send" placeholder="Address">
+              </div><i class="clearfix"></i>
+              <div class="form-group col-md-2">
+                <input type="text" class="form-control input-sm" id="state_send" placeholder="State">
+              </div>
+              <div class="form-group col-md-3">
+                <input type="text" class="form-control input-sm" id="street_send" placeholder="City">
+              </div>
+            </div>
+
+            <h1 class="text-center head">Official document</h1>
+
+            <div class="intro row clearfix">
+                <div class="col-md-1 dear">Dear</div>
+                <div class="form-group col-md-2">
+                  <select class="form-control input-sm">
+                    <option value="mr">Mr.</option>
+                    <option value="mrs">Mrs.</option>
+                    <option value="ms">Ms.</option>
+                    <option value="dr">Dr.</option>
+                    <option value="proff">Proff.</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-5">
+                  <input type="text" class="form-control input-sm" id="fullname_recieve" placeholder="Full Name">
+                </div>
+            </div>
+
+            <div class="text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quis a quod tempore,   <span class="writable"><input type="text" class="form-control input-sm" id="reason_1" placeholder="Your text"></span> laborum velit ipsam tenetur illo voluptates quae sapiente id ut nulla laudantium repellendus aperiam eius asperiores dignissimos omnis odio quaerat adipisci! Repudiandae quod sint officiis temporibus commodi accusamus! <span class="writable"><input type="text" class="form-control input-sm" id="number_1" placeholder="Numbers"/></span> Repellendus temporibus quo expedita doloribus pariatur, magnam dicta perferendis illo hic quia, dignissimos suscipit ducimus vero numquam, quasi nesciunt voluptas veritatis ex similique mollitia vel consequuntur. Dolorum tempore provident, odit aliquid iusto hic perspiciatis!<span class="writable"><input type="text" class="form-control input-sm" id="date_1" placeholder="dd/mm/yyyy"> Quasi cum officiis sapiente, quo ab expedita quia deleniti, dicta numquam ex blanditiis ad incidunt accusamus placeat nisi pariatur molestiae tenetur alias, perspiciatis doloremque quidem.</span>
+            </div>
+
+            <div class="signature">
+              <div>
+                <button type="button" class="btn btn-default">Sign Document</button>
+              </div>
+              Secretary<br/>
+              Joahna Doe
+            </div>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+      <!-- DOCUMENT CONTAINER -->
+
+
+    </div>
+  </div>
+
+  <!-- /CONTENT -->
+
+<div class="row clearfix">
+  <footer class="col-md-12">
+    <div>Document Transfer System. Made by 7coder</div>
+  </footer>
+</div>
+</div>
+
+
+<script type="text/javascript" src="./script.js"></script>
+</body>
+</html>

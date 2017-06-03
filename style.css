@@ -1,0 +1,101 @@
+.container {
+  border-left: #ddd 1px solid;
+  border-right: #ddd 1px solid; }
+
+.header {
+  background: linear-gradient(#e1e1e1, #fff);
+  padding: 20px 0; }
+  .header .logo {
+    font-size: 1.3em;
+    color: #369; }
+  .header .user-name {
+    text-align: right;
+    margin-top: 2px;
+    font-size: 13px;
+    color: #444; }
+
+.list-of-docs-container {
+  border-top: #ddd 3px solid;
+  background: #fffbe9; }
+
+.list-of-docs .item {
+  padding: 5px 0; }
+  .list-of-docs .item .doc-item {
+    border: #666 1px dotted;
+    cursor: pointer;
+    font-size: 13px;
+    padding: 10px;
+    position: relative; }
+    .list-of-docs .item .doc-item:hover {
+      background: #fff6cf; }
+    .list-of-docs .item .doc-item .head {
+      font-weight: bold;
+      margin-bottom: 5px; }
+    .list-of-docs .item .doc-item .date,
+    .list-of-docs .item .doc-item .author {
+      margin-bottom: 3px; }
+    .list-of-docs .item .doc-item .status {
+      position: absolute;
+      right: 0;
+      top: 0;
+      color: #fff;
+      font-size: 10px;
+      padding: 3px 0;
+      width: 40px;
+      text-align: center; }
+      .list-of-docs .item .doc-item .status.new {
+        background: #690; }
+      .list-of-docs .item .doc-item .status.archive {
+        background: grey; }
+
+.buttons-menu {
+  background: #f1f1f1;
+  border-top: #ddd 3px solid;
+  margin-bottom: 20px; }
+  .buttons-menu .item {
+    float: left; }
+    .buttons-menu .item:hover {
+      cursor: pointer;
+      background: #e4e4e4; }
+    .buttons-menu .item .button-menu {
+      padding: 10px; }
+
+.document-picker {
+  display: none;
+  margin-bottom: 30px; }
+  .document-picker label {
+    margin-right: 10px; }
+
+.document-item {
+  border: #ddd 1px solid;
+  box-shadow: 5px 5px 5px #f1f1f1;
+  padding: 50px; }
+
+.document-container {
+  padding: 20px 0 40px; }
+
+footer {
+  background: linear-gradient(#e1e1e1, #fff);
+  padding: 20px 0;
+  border-top: #ddd 1px solid; }
+
+/******* DOCUMENT ********/
+.document-item .logo {
+  margin-bottom: 80px;
+  font-size: 1.8em; }
+  .document-item .logo .img {
+    width: 50px; }
+.document-item .address-container {
+  margin-bottom: 40px; }
+.document-item .intro .dear {
+  line-height: 28px; }
+.document-item h1 {
+  margin-bottom: 50px; }
+.document-item .text {
+  line-height: 2em;
+  margin-bottom: 50px; }
+  .document-item .text .form-control {
+    display: inline-block;
+    width: auto; }
+.document-item .signature .btn {
+  margin-bottom: 10px; }
